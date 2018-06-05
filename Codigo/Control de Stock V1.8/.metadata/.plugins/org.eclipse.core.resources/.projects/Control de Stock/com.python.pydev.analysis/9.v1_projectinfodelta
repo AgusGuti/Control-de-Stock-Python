@@ -1,0 +1,15 @@
+INSTUPmanejoDeArchivos
+C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\manejoDeArchivos.py
+INFOS:&&3|1|2|0|3|9|1&&3|4|2|0|3|10|1&&2|5|2|0|3|13|5&&2|6|2|0|3|34|5&&2|7|2|0|3|63|5&&2|8|2|0|3|75|5&&2|9|2|0|3|82|5&&2|10|2|0|3|96|5&&2|11|2|0|3|110|5&&2|12|2|0|3|132|5
+C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\manejoDeArchivos.py=3
+existeArchivo=7
+levantarStock=11
+rutaStock=1
+escribirArchivoConfig=10
+leerArchivoConfig=12
+escribirArchivo=6
+modificarArchivo=8
+rutaConfig=4
+crearArchivoConfig=9
+manejoDeArchivos=2
+crearArchivo=5

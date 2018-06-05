@@ -1,0 +1,5 @@
+
+
+
+producto = Producto(1, "Jamon y Queso", 0, 0, 0, 0)
+dicEmpanadas = {'jq' : producto}

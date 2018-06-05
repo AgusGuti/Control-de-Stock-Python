@@ -1,0 +1,16 @@
+Producto	Stock	Precio p/u
+
+Chipa    	0	0
+Empanadas    	0	0
+Tarta    	0	0
+Mini-Tarta    	0	0
+Panini    	0	0
+Tostable    	0	0
+Medialuna    	0	0
+Churro    	0	0
+Panales    	0	0
+Criollito    	0	0
+
+			Total: 0
+
+Encargado: Carlito

@@ -1,0 +1,86 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\.metadata\.plugins\org.eclipse.core.resources\.projects\Control de Stock\com.python.pydev.analysis\v2_indexcache
+dicPromo|1526059944757234000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\dicPromo.py
+ClaseProducto|1526350109708725000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\ClaseProducto.py
+dicDatos|1526060387147596000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\dicDatos.py
+Promo|1526347115545672000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\Promo.py
+funciones|1526347557030101000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\funciones.py
+test|1525743910076950000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\test.py
+dicTraduccion|1525746397424639000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\dicTraduccion.py
+__init__|1525402315486857000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\__init__.py
+dicUsuarios|1525481209759934000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\dicUsuarios.py
+manejoDeArchivos|1526350601305936000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\manejoDeArchivos.py
+menu|1526348440480144000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\menu.py
+promociones|1526350475266851000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\promociones.py
+-- END DISKCACHE
+-- START DICTIONARY
+28
+8=dicPromo
+23=Producto.modificarCantidadPorCaja
+1=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\funciones.py
+21=Producto
+18=dicTraduccion
+4=promociones
+28=Producto.modificarStockCritico
+3=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\promociones.py
+5=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\manejoDeArchivos.py
+10=dicDatos
+14=ClaseProducto
+26=Producto.descontarStock
+25=Producto.modificarPrecioXUnidad
+22=Producto.__init__
+7=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\dicPromo.py
+11=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\menu.py
+12=menu
+20=dicUsuarios
+9=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\dicDatos.py
+17=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\dicTraduccion.py
+13=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\ClaseProducto.py
+19=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\dicUsuarios.py
+27=Producto.agregarStock
+24=Promo.__init__
+16=Promo
+2=funciones
+15=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.8\Control de Stock\srcModelo\Promo.py
+6=manejoDeArchivos
+-- END DICTIONARY
+-- START TREE 1
+17
+bus|1|buscarElemento!1^61#5*18@
+can|1|cantidad!3^26#3*35@
+cre|2|crearArchivo!5^13#5*50@crearArchivoConfig!5^78#5*50@
+dic|2|dicPromo!7^11#1*67@dicStock!9^11#1*83@
+esc|2|escribirArchivoConfig!5^92#5*50@escribirArchivo!5^34#5*50@
+exi|1|existeArchivo!5^59#5*50@
+lee|3|leerEntero!1^23#5*18@leerCadena!1^41#5*18@leerArchivoConfig!5^128#5*50@
+lev|1|levantarStock!5^106#5*50@
+lim|1|limpia!1^11#5*18@
+mod|1|modificarArchivo!5^71#5*50@
+mos|3|mostrarLogo!1^83#5*18@mostrarMenuPrincipal!11^4#5*98@mostrarMenuPromo!11^21#5*98@
+opc|1|opcion!3^19#2*35@
+pro|4|promo!7^10#1*67@producto!9^10#1*83@Producto!13^4#7*113@Promo!15^8#7*129@
+rut|2|rutaStock!5^9#1*51@rutaConfig!5^10#1*51@
+sal|1|salir!3^11#1*35@
+tra|1|traduccion!17^5#1*147@
+usu|1|usuario!19^4#1*163@
+-- END TREE
+-- START TREE 2
+16
+__i|2|__init__!21&13^7#6*114@__init__!16&15^10#9*130@
+agr|1|agregarStock!21&13^38#6*114@
+caj|1|cajas!22&13^12#3*115@
+cal|1|calcularPrecio!21&13^60#6*114@
+can|2|cantidadPorCaja!22&13^13#3*115@cantidadPorCaja!23&13^47#3*115@
+cnt|1|cntVentas!24&15^13#9*131@
+des|1|descontarStock!21&13^21#6*114@
+din|1|dineroAcumulado!22&13^18#3*115@
+idp|2|idProducto!22&13^9#3*115@idPromo!24&15^11#9*131@
+mer|1|merma!22&13^17#3*115@
+mod|3|modificarPrecioXUnidad!21&13^50#6*114@modificarStockCritico!21&13^42#6*114@modificarCantidadPorCaja!21&13^46#6*114@
+mos|1|mostrarProducto!21&13^54#6*114@
+nom|2|nombre!24&15^12#9*131@nombre!22&13^10#3*115@
+pre|3|precio!24&15^14#9*131@precioXUnidad!22&13^14#3*115@precioXUnidad!25&13^51#3*115@
+sto|5|stockActual!22&13^15#3*115@stockActual!26&13^23#4*115@stockActual!27&13^39#3*115@stockCritico!22&13^11#3*115@stockCritico!28&13^43#3*115@
+ven|2|ventaPromo!16&15^17#9*130@ventas!22&13^16#3*115@
+-- END TREE

@@ -1,0 +1,50 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\.metadata\.plugins\org.eclipse.core.resources\.projects\Control de Stock\com.python.pydev.analysis\v2_indexcache
+srcModelo.dicDatos|1525384687925843000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\dicDatos.py
+srcModelo.manejoDeArchivos|1525349440379497000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\manejoDeArchivos.py
+srcModelo.logo|1524925149950102000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\logo.py
+srcModelo.__init__|1524925021911421000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\__init__.py
+srcModelo.test|1524986238495687000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\test.py
+srcModelo.ClaseProducto|1525380493283225000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\ClaseProducto.py
+-- END DISKCACHE
+-- START DICTIONARY
+13
+9=Producto.modificarCantidadPorCaja
+4=srcModelo.dicDatos
+12=Producto.descontarStock
+7=Producto
+3=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\dicDatos.py
+10=Producto.modificarPrecioXUnidad
+8=Producto.__init__
+1=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\manejoDeArchivos.py
+13=Producto.agregarStock
+11=Producto.modificarStockCritico
+2=srcModelo.manejoDeArchivos
+5=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\ClaseProducto.py
+6=srcModelo.ClaseProducto
+-- END DICTIONARY
+-- START TREE 1
+6
+cre|1|crearArchivo!1^9#5*18@
+dic|1|dicStock!3^14#1*35@
+ele|1|elemento!3^16#1*35@
+esc|1|escribirArchivo!1^27#5*18@
+mod|1|modificarArchivo!1^47#5*18@
+pro|2|Producto!5^5#7*49@producto!3^13#1*35@
+-- END TREE
+-- START TREE 2
+12
+__i|1|__init__!7&5^8#6*50@
+agr|1|agregarStock!7&5^31#6*50@
+caj|1|cajas!8&5^13#3*51@
+cal|1|calcularPrecio!7&5^53#6*50@
+can|2|cantidadPorCaja!8&5^14#3*51@cantidadPorCaja!9&5^40#3*51@
+des|1|descontarStock!7&5^18#6*50@
+idp|1|idProducto!8&5^10#3*51@
+mod|3|modificarCantidadPorCaja!7&5^39#6*50@modificarStockCritico!7&5^35#6*50@modificarPrecioXUnidad!7&5^43#6*50@
+mos|1|mostrarProducto!7&5^47#6*50@
+nom|1|nombre!8&5^11#3*51@
+pre|2|precioXUnidad!8&5^15#3*51@precioXUnidad!10&5^44#3*51@
+sto|5|stockCritico!8&5^12#3*51@stockCritico!11&5^36#3*51@stockActual!8&5^16#3*51@stockActual!12&5^20#4*51@stockActual!13&5^32#3*51@
+-- END TREE

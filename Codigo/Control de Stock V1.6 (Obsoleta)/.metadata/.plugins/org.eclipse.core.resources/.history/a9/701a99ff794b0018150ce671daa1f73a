@@ -1,0 +1,52 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+import time
+import os
+
+
+#Metodo que crea el archivo con el nombre de la fecha y carga los datos SOLO si no existe.
+def crearArchivo(diccionario):
+    
+    nombre = time.asctime(time.localtime()) + ".txt"
+    nombre = nombre[0:10]+" - "+nombre[20:]
+    
+    if (os.path.isfile(nombre) == False):
+        with open(nombre,'w') as fileStock:
+            #escribirArchivo(fileStock, diccionario)
+           
+            fileStock.write("Producto\tStock\tPrecio p/u\n")
+    
+            aEscribir = []
+            
+            for key in diccionario:
+                aEscribir.append(diccionario[key].nombre)
+                aEscribir.append(diccionario[key].stockActual)
+                aEscribir.append(diccionario[key].precioXUnidad)
+                fileStock.write(aEscribir +"\n")
+                
+                #print(aEscribir+"\n")
+                pass
+            
+            fileStock.close()
+        pass
+    else:
+        print("ERROR el archivo ya existe.")    
+        pass
+    
+    pass
+
+
+#Metodo que escribe el archivo seleccionado
+def escribirArchivo(archivo, diccionario):
+    
+    
+    
+    pass
+
+
+#Metodo que permite modificar el archivo seleccionado.
+def modificarArchivo(archivo, diccionario):
+    
+    
+    pass

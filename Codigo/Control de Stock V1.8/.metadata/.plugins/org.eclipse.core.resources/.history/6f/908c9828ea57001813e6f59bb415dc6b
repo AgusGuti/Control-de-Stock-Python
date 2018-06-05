@@ -1,0 +1,159 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+from dicTraduccion import * 
+import time
+import os
+from _overlapped import NULL
+
+rutaStock = "./Archivos de Stock/"
+rutaConfig = "./Archivos de programa/"
+
+# Metodo que crea el archivo con el nombre de la fecha y carga los datos SOLO si no existe.
+def crearArchivo(diccionario, usuario):
+    error = False
+    
+    nombre = time.asctime(time.localtime()) + ".txt"
+    nombre = traduccion[nombre[0:3]] + nombre[3:10] + " - " + nombre[20:]
+    
+    if (existeArchivo(rutaStock + nombre) == False):
+        with open(rutaStock + nombre, 'w') as fileStock:
+            escribirArchivo(fileStock, diccionario, usuario)
+            fileStock.close()
+        pass
+    else:
+        print("ERROR el archivo ya existe.")  
+        error = True  
+        pass   
+    
+    return error
+    pass
+
+
+# Metodo que escribe el archivo seleccionado
+def escribirArchivo(archivo, diccionario, usuario):
+    total = 0
+    
+    archivo.write("Producto\t\tStock\tPrecio p/u\n\n")
+        
+    for key in diccionario:
+        aEscribir = []
+        aEscribir.append(diccionario[key].nombre + "    ")
+        aEscribir.append(str(diccionario[key].stockActual))
+        aEscribir.append(str(diccionario[key].precioXUnidad))
+        if(key == 'pizzeta' or key == 'bocaditos' or key == 'cepita' or key == 'clasico' or key == 'especial'):
+            archivo.write('\t'.join(aEscribir) + "\n")
+        else:
+            archivo.write('\t\t'.join(aEscribir) + "\n")
+            pass
+        
+        total += diccionario[key].dineroAcumulado
+        diccionario[key].merma = 0
+        diccionario[key].ventas = 0
+        diccionario[key].dineroAcumulado = 0
+        pass
+    
+    archivo.write("\n\t\t\tTotal: " + str(total))        
+    archivo.write("\n\nEncargado: " + usuario)   
+    pass
+
+
+#Metodo que revisa si un archivo existe
+#Devuelve True si existe, de lo contrario False 
+def existeArchivo(archivo):
+       
+    if(os.path.isfile(archivo) == NULL):
+        encontrado = False
+    else:
+        encontrado = True
+        pass
+    
+    return encontrado
+
+
+# Metodo que permite modificar el archivo seleccionado.
+def modificarArchivo(archivo, diccionario):
+    
+    
+    pass
+
+
+#Metodo que genera el archivo de configuracion de Stock
+def crearArchivoConfig(diccionario):
+    
+    nombre = time.asctime(time.localtime()) + "-Config.txt"
+    nombre = traduccion[nombre[0:3]] + nombre[3:10] + " " + nombre[20:]
+    
+    if (existeArchivo(rutaConfig + nombre) == False):
+        with open(rutaConfig + nombre, 'w') as fileConfig:
+            escribirArchivoConfig(fileConfig, diccionario)
+            fileConfig.close()
+            pass
+    pass
+
+
+# Metodo que escribe el archivo seleccionado
+def escribirArchivoConfig(archvConfig, diccionario):
+        
+    for key in diccionario:
+        archvConfig.write(str(diccionario[key].stockCritico) + "\n")
+        archvConfig.write(str(diccionario[key].cajas) + "\n")
+        archvConfig.write(str(diccionario[key].cantidadPorCaja) + "\n")
+        archvConfig.write(str(diccionario[key].precioXUnidad) + "\n")
+        archvConfig.write(str(diccionario[key].stockActual) + "\n")
+        pass          
+    pass
+
+
+#Metodo que levanta el estado del Stock de dias anteriores.
+#Revisa como maximo hasta 7 dias antes
+def levantarStock(diccionario):
+    contador = 0
+    encontrado = False
+    
+    while(contador != 7 and encontrado == False):
+        
+        nombre = time.asctime(time.localtime(time.mktime(time.localtime())- 86400 * contador)) + "-Config.txt"
+        nombre = traduccion[nombre[0:3]] + nombre[3:10] + " " + nombre[20:]
+       
+        if(existeArchivo(rutaConfig + nombre)):
+            leerArchivoConfig(rutaConfig + nombre, diccionario)                      
+            encontrado = True
+            pass
+        
+        contador+= 1
+        pass    
+    
+    return encontrado
+    pass
+    
+    
+#Metodo que recorre el archivo de configuracion para recuperar los datos
+def leerArchivoConfig(archvConfig, diccionario):
+    lista = NULL
+    contador = 0
+    
+    #Paso el archivo a una lista
+    with open(archvConfig, 'r') as fileConfig:
+        #fileConfig.seek(0)
+        lista = fileConfig.readlines()
+        fileConfig.close()
+        pass
+    
+    #Asigno cada valor que estaba en el archivo al diccionario
+    for key in diccionario:
+        diccionario[key].stockCritico = int(lista[contador])
+        diccionario[key].cajas = int(lista[contador + 1])
+        diccionario[key].cantidadPorCaja = int(lista[contador + 2])
+        diccionario[key].precioXUnidad = float(lista[contador + 3])
+        diccionario[key].stockActual = int(lista[contador + 4])
+        contador += 5           
+    pass
+    
+
+
+    
+    
+    
+    
+    

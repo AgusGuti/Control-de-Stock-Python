@@ -1,0 +1,26 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+from ClaseProducto import *
+
+
+#							(IdProducto, nombre, cantidad vendida)
+#            (idProducto, nombre, stockCritico, cajas, cantidadPorCaja, precioXUnidad)
+
+producto = Producto(1,"Cafe clasico chico",0,0,0,0)
+dicCafe = {'clasico': producto}
+
+producto= Producto(2,"Cafe especial chico",0,0,0,0)
+dicCafe['especial'] = producto
+
+
+
+
+# 							(IdProducto, nombre, )
+#===============================================================================
+# producto= producto(1,"cafe clasico",0)
+# producto= producto(1,"cafe clasico",0)
+# producto= producto(1,"cafe clasico",0)
+#===============================================================================
+
+

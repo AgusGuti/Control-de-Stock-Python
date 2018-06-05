@@ -1,0 +1,60 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.6\.metadata\.plugins\org.eclipse.core.resources\.projects\Control de Stock\com.python.pydev.analysis\v2_indexcache
+srcModelo.manejoDeArchivos|1525349440379497000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\manejoDeArchivos.py
+srcModelo.dicPanales|1525357856075793000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\dicPanales.py
+srcModelo.logo|1524925149950102000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\logo.py
+srcModelo.ElementoDiccionario|1525379239447198000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\ElementoDiccionario.py
+srcModelo.dicEmpanadas|1525357729679000000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\dicEmpanadas.py
+srcModelo.__init__|1524925021911421000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\__init__.py
+srcModelo.test|1524986238495687000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\test.py
+srcModelo.ClaseProducto|1525380493283225000|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\ClaseProducto.py
+-- END DISKCACHE
+-- START DICTIONARY
+19
+14=Producto.modificarCantidadPorCaja
+15=Elemento.__init__
+18=Producto.descontarStock
+4=srcModelo.dicPanales
+11=Producto
+16=Producto.modificarPrecioXUnidad
+12=Elemento
+7=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\ElementoDiccionario.py
+6=srcModelo.dicEmpanadas
+13=Producto.__init__
+1=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\manejoDeArchivos.py
+5=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\dicEmpanadas.py
+19=Producto.agregarStock
+17=Producto.modificarStockCritico
+2=srcModelo.manejoDeArchivos
+8=srcModelo.ElementoDiccionario
+3=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\dicPanales.py
+9=C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\ClaseProducto.py
+10=srcModelo.ClaseProducto
+-- END DICTIONARY
+-- START TREE 1
+6
+cre|1|crearArchivo!1^9#5*18@
+dic|2|dicPanales!3^11#1*35@dicEmpanadas!5^10#1*51@
+ele|1|Elemento!7^5#7*65@
+esc|1|escribirArchivo!1^27#5*18@
+mod|1|modificarArchivo!1^47#5*18@
+pro|3|producto!5^9#1*51@Producto!9^5#7*81@producto!3^10#1*35@
+-- END TREE
+-- START TREE 2
+14
+__i|2|__init__!11&9^8#6*82@__init__!12&7^8#9*66@
+agr|1|agregarStock!11&9^31#6*82@
+caj|1|cajas!13&9^13#3*83@
+cal|1|calcularPrecio!11&9^53#6*82@
+can|2|cantidadPorCaja!13&9^14#3*83@cantidadPorCaja!14&9^40#3*83@
+des|1|descontarStock!11&9^18#6*82@
+dic|1|diccionario!15&7^11#9*67@
+ide|1|idElemento!15&7^9#9*67@
+idp|1|idProducto!13&9^10#3*83@
+mod|3|modificarCantidadPorCaja!11&9^39#6*82@modificarStockCritico!11&9^35#6*82@modificarPrecioXUnidad!11&9^43#6*82@
+mos|2|mostrarElemento!12&7^14#9*66@mostrarProducto!11&9^47#6*82@
+nom|2|nomCategoria!15&7^10#9*67@nombre!13&9^11#3*83@
+pre|2|precioXUnidad!13&9^15#3*83@precioXUnidad!16&9^44#3*83@
+sto|5|stockCritico!13&9^12#3*83@stockCritico!17&9^36#3*83@stockActual!13&9^16#3*83@stockActual!18&9^20#4*83@stockActual!19&9^32#3*83@
+-- END TREE

@@ -1,0 +1,22 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+def mostrarMenuPrincipal():
+    
+    print ("Menu:")
+    print ("1- Agregar stock")
+    print ("2- Quitar stock")
+    print ("3- Modificar stock critico")
+    print ("4- Modificar cantidad por caja")
+    print ("5- Modificar precio por unidad")
+    print ("6- Mostrar un producto")
+    print ("7- Mostrar todos los productos")
+    print ()
+    print ("9- Generar registro diario")
+    print ()
+    print ("0- Salir")
+    print ()
+    
+    
+def mostrarMenuCafe():
+    

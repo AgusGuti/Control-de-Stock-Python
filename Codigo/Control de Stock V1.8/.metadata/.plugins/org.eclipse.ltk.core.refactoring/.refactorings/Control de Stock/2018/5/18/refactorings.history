@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Control de Stock/srcModelo/funcion limpiar.py&apos; to &apos;funcionLimpiar.py&apos;" description="Rename resource &apos;funcion limpiar.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="srcModelo/funcion limpiar.py" name="funcionLimpiar.py" stamp="1525402659443" updateReferences="true"/>
+</session>

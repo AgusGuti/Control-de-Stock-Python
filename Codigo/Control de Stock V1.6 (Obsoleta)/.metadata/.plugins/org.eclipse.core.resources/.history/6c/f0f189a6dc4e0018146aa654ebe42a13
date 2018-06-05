@@ -1,0 +1,12 @@
+'''
+Created on 3 may. 2018
+
+@author: Ruso-Note
+'''
+
+class ElementoDiccionario(object):    
+
+
+    def __init__(self, idElemento, diccionario):
+        self.idElemento = idElemento
+        self.diccionario = diccionario        

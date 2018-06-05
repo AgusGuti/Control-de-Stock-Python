@@ -1,0 +1,28 @@
+Producto		Stock	Precio p/u
+
+Empanadas    		0	24.0
+Chipa    		2016	8.0
+Medialuna    		0	8.0
+Panales    		0	8.0
+Pastelito    		0	25.0
+Panini    		0	50.0
+Tarta    		0	85.0
+Mini-Tarta    		0	40.0
+Pizzeta rellena    	0	35.0
+Bocaditos de pollo    	0	8.5
+Tostable    		0	29.0
+Brownie    		0	25.0
+Torta    		0	25.0
+Churro    		0	10.0
+Criollito    		0	10.0
+Bebida 220    		0	17.0
+Bebida 237    		0	17.0
+Bebida 250    		0	17.0
+Bebida Cepita    	0	17.0
+Bebida 600    		0	40.0
+Cafe clasico chico    	0	30.0
+Cafe especial chico    	0	50.0
+
+			Total: 0
+
+Encargado: asd

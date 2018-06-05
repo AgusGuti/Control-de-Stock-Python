@@ -1,0 +1,212 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+from ClaseProducto import *
+from diccionarios.dicDatos import *
+from manejoDeArchivos import *
+from funciones import *
+from operator import invert
+from _overlapped import NULL
+
+limpia()
+
+print("GGGGGGG")
+print("GG       UU  UU  TTTTTT  LL      OOOOOO  PPPPPP")
+print("GG       UU  UU    TT    LL      OO  OO  PP  PP")
+print("GG  GGG  UU  UU    TT    LL      OO  OO  PPPPPP")
+print("GG   GG  UU  UU    TT    LL      OO  OO  PP    ")
+print("GGGGGGG  UUUUUU    TT    LLLLLL  OOOOOO  PP    ")
+
+print ("\n")
+print ("Desarrollado por GUTLOP SA")
+print ("\n")
+
+salir = False
+
+while(salir == False):
+	print ()
+	print ("Menu:")
+	print ("1- Agregar stock")
+	print ("2- Quitar stock")
+	print ("3- Modificar stock critico")
+	print ("4- Modificar cantidad por caja")
+	print ("5- Modificar precio por unidad")
+	print ("6- Mostrar un producto")
+	print ("7- Mostrar todos los productos")
+	print ()
+	print ("9- Generar registro diario")
+	print ()
+	print ("0- Salir")
+	print ()
+
+	opcion = leerEntero("Ingrese una de las opciones descritas: ")
+
+	limpia()
+	print ()
+
+# Agregar stock
+
+	if (opcion == 1):
+		print("Agregar stock: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+		
+		buscarElemento()		
+		print()
+		
+		dato = leerEntero("Indique la cantidad de cajas agregadas: ")
+		dicStock[opcion.lower()].agregarStock(dato)
+		
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[opcion.lower()].mostrarProducto()
+		print("\n")
+	
+		# Registrar en el archivo
+	
+		pass
+
+# Remover stock
+
+	if (opcion == 2):
+		print("Quitar stock: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		buscarElemento()
+		print()
+		
+		dato = leerEntero("Indique la cantidad elementos vendidos: ")		
+		
+		dicStock[opcion.lower()].descontarStock(dato)
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[opcion.lower()].mostrarProducto()
+		print("\n")
+	
+		# Registrar en el archivo
+	
+		pass
+
+# Modificar stock critico
+
+	if (opcion == 3):
+		print("Modificar stock critico: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		buscarElemento()
+		print()
+		
+		dato = leerEntero("Indique el nuevo stock critico: ")	
+		dicStock[opcion.lower()].modificarStockCritico(dato)
+	
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[opcion.lower()].mostrarProducto()
+		print("\n")
+		
+		# Registrar en el archivo
+	
+		pass
+
+# Modificar cantidad por caja
+
+	if (opcion == 4):
+		print("Modificar cantidad por caja: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		buscarElemento()
+		print()
+		
+		dato = leerEntero("Indique la nueva cantidad por caja: ")
+		dicStock[opcion.lower()].modificarCantidadPorCaja(dato)
+		
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[opcion.lower()].mostrarProducto()
+		print("\n")
+	
+		# Registrar en el archivo
+	
+		pass
+
+# Modificar precio por unidad
+
+	if (opcion == 5):
+		print("Modificar precio por unidad: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		buscarElemento()
+		print()
+		
+		dato = leerEntero("Indique el nuevo precio por unidad: ")
+		dicStock[opcion.lower()].modificarPrecioXUnidad(dato)
+		
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[opcion.lower()].mostrarProducto()
+		print("\n")
+	
+		# Registrar en el archivo
+	
+		pass
+
+# Mostrar un producto
+
+	if (opcion == 6):
+		print("Mostrar un producto: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		buscarElemento()
+		print()
+		
+		pass
+
+# Mostrar todos los productos
+
+	if (opcion == 7):
+		print("Lista de productos: \n")
+	
+		for key in dicStock:
+				print(dicStock[key].nombre)
+				dicStock[key].mostrarProducto()
+				print("\n")
+		pass			
+	pass
+		
+# Genera el registro diario
+
+	if (opcion == 9):
+		print("Lista de productos: \n")
+	
+		for key in dicStock:
+				print(dicStock[key].nombre)
+				dicStock[key].mostrarProducto()
+				print("\n")
+		pass			
+	pass
+		
+# Salida
+
+	if (opcion == 0):
+		salir = True;
+		exit()
+		pass
+
+pass

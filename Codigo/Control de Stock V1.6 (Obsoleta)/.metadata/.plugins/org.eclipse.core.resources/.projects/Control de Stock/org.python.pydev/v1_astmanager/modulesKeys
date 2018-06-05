@@ -1,0 +1,10 @@
+MODULES_MANAGER_V2
+srcModelo.ClaseProducto|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\ClaseProducto.py
+srcModelo.ElementoDiccionario|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\ElementoDiccionario.py
+srcModelo.__init__|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\__init__.py
+srcModelo.dicDatos|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\dicDatos.py
+srcModelo.dicEmpanadas|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\dicEmpanadas.py
+srcModelo.dicPanales|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\dicPanales.py
+srcModelo.logo|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\logo.py
+srcModelo.manejoDeArchivos|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\manejoDeArchivos.py
+srcModelo.test|C:\Users\Ruso-Note\Google Drive\GUTLOP\Control de Stock\Control de Stock V1.0\Control de Stock\srcModelo\test.py

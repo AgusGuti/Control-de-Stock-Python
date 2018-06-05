@@ -1,0 +1,26 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+import time
+import os
+
+
+# def crearArchivo():
+nombre = time.asctime(time.localtime()) + ".txt"
+nombre = nombre[0:10]+" - "+nombre[20:]
+
+if (!os.path.isfile(nombre)):
+    with open(nombre,'w') as fileStock:
+        fileStock.write(" ")
+        fileStock.close()
+    pass
+else:
+    print("ERROR el archivo ya existe.")    
+    pass
+#     pass
+
+
+
+
+# def escribirArchivo(self, diccionario):
+    

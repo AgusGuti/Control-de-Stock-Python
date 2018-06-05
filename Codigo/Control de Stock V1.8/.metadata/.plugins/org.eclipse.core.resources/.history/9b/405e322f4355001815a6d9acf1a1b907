@@ -1,0 +1,32 @@
+from ClaseProducto import *
+from dicDatos import *
+from dicCafe import *
+from manejoDeArchivos import *
+from funciones import *
+from operator import invert
+from _overlapped import NULL
+from menu import mostrarMenuPromo
+from dicPromo import dicPromo
+
+salir =False
+
+contador1=0
+contador2=0
+contador3=0
+contador4=0
+contador5=0
+contador6=0
+
+
+while(salir == False):
+	limpia()
+	
+	mostrarMenuPromo()
+
+	opcion = leerEntero("Ingrese el item de cafe/promo: ")
+	print()
+	cantidad = leerEntero("Ingrese la cantidad vendida: ")
+	print()
+	dicPromo["promo"+opcion].cntVentas += 1
+
+pass

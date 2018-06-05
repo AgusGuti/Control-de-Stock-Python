@@ -1,0 +1,37 @@
+import subprocess as sp
+from dicDatos import *
+import sys
+
+
+def limpia():
+    plataforma = sys.platform
+    if plataforma.startswith('linux'):
+        sp.call('clear')
+    elif plataforma.startswith('win'):
+        sp.call('cls', shell=True)
+        
+        
+def leerEntero(mensaje):
+
+    while(True):
+        dato = input(mensaje)
+        try:
+            dato = int(dato)
+            break
+        except ValueError:
+                print("ERROR El elemento ingresado no es un entero")
+        pass
+    
+    return dato
+
+
+def buscarElemento():
+
+    while(True):
+        opcion = input("\nSeleccione un elemento: \n")
+        try:
+            dicStock[opcion].mostrarProducto()
+            break
+        except KeyError:
+            print("ERROR El producto no existe en la lista")
+        pass

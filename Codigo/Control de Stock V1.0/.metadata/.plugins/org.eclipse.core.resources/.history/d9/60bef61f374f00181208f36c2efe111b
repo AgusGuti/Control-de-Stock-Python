@@ -1,0 +1,22 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+
+class Elemento(object):    
+
+
+    def __init__(self, idElemento, nomCategoria, diccionario):
+        self.idElemento = idElemento
+        self.nomCategoria = nomCategoria
+        self.diccionario = diccionario
+        
+        
+    def mostrarElemento(self):
+        for key in self.diccionario:
+            print("\t")
+            print("Stock: ", self.diccionario[key].stockActual, end=" ; ")
+            print("Stock critico: ", self.diccionario[key].stockCritico, end=" ; ")
+            print("Cantidad por caja: ", self.diccionario[key].cantidadPorCaja, end=" ; ")
+            print("Precio por unidad: ", self.diccionario[key].precioXUnidad) 
+            print()
+            pass     

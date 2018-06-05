@@ -1,0 +1,73 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+import subprocess as sp
+from dicDatos import *
+import sys
+
+
+def limpia():
+    plataforma = sys.platform
+    if plataforma.startswith('linux'):
+        sp.call('clear')
+    elif plataforma.startswith('win'):
+        sp.call('cls', shell=True)
+        
+        
+def leerEntero(mensaje):
+
+    while(True):
+        dato = input(mensaje)
+        try:
+            dato = int(dato)
+            break
+        except ValueError:
+                print("ERROR El elemento ingresado no es un entero")
+        pass
+    
+    return dato
+
+def leerCadena(mensaje):
+
+    while(True):
+        dato = input(mensaje)
+        
+        if(str(dato).isalnum() == False):
+            dato = str(dato)
+            pass
+        else:
+            print("ERROR Lo ingresado no es un normbre")
+        break
+                
+        pass
+    
+    return dato
+
+
+def buscarElemento():
+
+    while(True):
+        opcion = input("\nSeleccione un elemento: \n")
+        try:
+            opcion = opcion.lower()
+            dicStock[opcion].mostrarProducto()
+            break
+        except KeyError:
+            print("ERROR El producto no existe en la lista")
+        pass
+    
+    return opcion
+
+
+def mostrarLogo():
+    
+    print("\tGGGGGGG")
+    print("\tGG       UU  UU  TTTTTT  LL      OOOOOO  PPPPPP")
+    print("\tGG       UU  UU    TT    LL      OO  OO  PP  PP")
+    print("\tGG  GGG  UU  UU    TT    LL      OO  OO  PPPPPP")
+    print("\tGG   GG  UU  UU    TT    LL      OO  OO  PP    ")
+    print("\tGGGGGGG  UUUUUU    TT    LLLLLL  OOOOOO  PP    ")
+    
+    print ("\n")
+    print ("\t\tDesarrollado por GUTLOP")
+    print ("\n")

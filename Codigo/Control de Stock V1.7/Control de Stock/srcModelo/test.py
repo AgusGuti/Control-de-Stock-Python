@@ -1,0 +1,16 @@
+
+
+from ClaseProducto import *
+from dicDatos import *
+from manejoDeArchivos import *
+import os
+import time
+import os
+
+
+#===============================================================================
+# crearArchivo(dicStock, "CARLOS")
+#===============================================================================
+
+
+crearArchivoConfig(dicStock)

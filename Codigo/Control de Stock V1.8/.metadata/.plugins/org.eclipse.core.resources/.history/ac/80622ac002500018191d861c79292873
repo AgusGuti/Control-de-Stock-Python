@@ -1,0 +1,240 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+from ClaseProducto import *
+from dicDatos import *
+from manejoDeArchivos import *
+from funciones import *
+from operator import invert
+from _overlapped import NULL
+
+
+salir = False
+
+usuario = leerCadena("Ingrese el nombre del usuario: ")
+print ("\n")
+
+while(salir == False):
+	limpia()
+	print ("\t\tDesarrollado por GUTLOP")
+	print ("\n")
+	
+	print ("Menu:")
+	print ("1- Agregar stock")
+	print ("2- Quitar stock")
+	print ("3- Modificar stock critico")
+	print ("4- Modificar cantidad por caja")
+	print ("5- Modificar precio por unidad")
+	print ("6- Mostrar un producto")
+	print ("7- Mostrar todos los productos")
+	print ()
+	print ("9- Generar registro diario")
+	print ()
+	print ("0- Salir")
+	print ()
+
+	opcion = leerEntero("Ingrese una de las opciones descritas: ")
+
+	limpia()
+	print ()
+
+# Agregar stock
+
+	if (opcion == 1):
+		print("Agregar stock: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+		
+		elemento = buscarElemento()		
+		print()
+		
+		dato = leerEntero("Indique la cantidad de cajas agregadas: ")
+		dicStock[elemento].agregarStock(dato)
+		
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[elemento].mostrarProducto()
+		print()
+	
+		# Registrar en el archivo
+		
+		print("Presione una tecla para continuar...")
+		input()
+		
+		pass
+
+# Remover stock
+
+	if (opcion == 2):
+		print("Quitar stock: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		elemento = buscarElemento()
+		print()
+		
+		dato = leerEntero("Indique la cantidad elementos vendidos: ")			
+		dicStock[elemento].descontarStock(dato)
+		
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[elemento].mostrarProducto()
+		print()
+	
+		
+		
+		print("Presione una tecla para continuar...")
+		input()
+		
+		pass
+
+# Modificar stock critico
+
+	if (opcion == 3):
+		print("Modificar stock critico: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		elemento = buscarElemento()
+		print()
+		
+		dato = leerEntero("Indique el nuevo stock critico: ")	
+		dicStock[elemento.lower()].modificarStockCritico(dato)
+	
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[elemento].mostrarProducto()
+		print()
+	
+		# Registrar en el archivo
+		
+		print("Presione una tecla para continuar...")
+		input()
+		
+		pass
+
+# Modificar cantidad por caja
+
+	if (opcion == 4):
+		print("Modificar cantidad por caja: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		elemento = buscarElemento()
+		print()
+		
+		dato = leerEntero("Indique la nueva cantidad por caja: ")
+		dicStock[elemento.lower()].modificarCantidadPorCaja(dato)
+		
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[elemento].mostrarProducto()
+		print()
+	
+		# Registrar en el archivo
+		
+		print("Presione una tecla para continuar...")
+		input()
+		
+		pass
+
+# Modificar precio por unidad
+
+	if (opcion == 5):
+		print("Modificar precio por unidad: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		elemento = buscarElemento()
+		print()
+		
+		dato = leerEntero("Indique el nuevo precio por unidad: ")
+		dicStock[elemento].modificarPrecioXUnidad(dato)
+		
+		print()
+		print("Nuevo estado del producto: ")
+		dicStock[elemento].mostrarProducto()
+		print()
+	
+		# Registrar en el archivo
+		
+		print("Presione una tecla para continuar...")
+		input()
+		
+		pass
+
+# Mostrar un producto
+
+	if (opcion == 6):
+		print("Mostrar un producto: \n")
+	
+		for key in dicStock:
+			print(key, "\t")
+			pass
+	
+		elemento = buscarElemento()
+		print()
+		
+		print("Presione una tecla para continuar...")
+		input()
+		
+		pass
+
+# Mostrar todos los productos
+
+	if (opcion == 7):
+		print("Lista de productos: \n")
+	
+		for key in dicStock:
+				print(dicStock[key].nombre)
+				dicStock[key].mostrarProducto()
+				print("\n")
+		pass			
+		print()
+		
+		print("Presione una tecla para continuar...")
+		input()
+		
+	pass
+		
+# Genera el registro diario
+
+	if (opcion == 9):
+		print("Generando registro diario... \n")
+	
+		crearArchivo(dicStock)
+		print()
+		
+		print("Archivo generado con exito!!")
+		print()
+	
+		print("Presione una tecla para continuar...")
+		input()
+					
+	pass
+		
+# Salida
+
+	if (opcion == 0):
+		salir = True;
+		print()
+		
+		mostrarLogo()
+		
+		print("Saliendo del programa. Muchas gracias.")
+		input()
+		
+		exit()
+		pass
+
+pass

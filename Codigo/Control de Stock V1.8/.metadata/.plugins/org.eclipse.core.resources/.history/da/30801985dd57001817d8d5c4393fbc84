@@ -1,0 +1,11 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+
+class Promo(object):
+    
+    def __init__(self, idPromo, nombre, cntVentas, precio):
+        self.idPromo = idPromo
+        self.nombre = nombre
+        self.cntVentas = cntVentas
+        self.precio = precio

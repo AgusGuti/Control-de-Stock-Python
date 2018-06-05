@@ -1,0 +1,31 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+# Estructura de producto (idProducto, nombre, stockCritico, cajas, cantidadPorCaja, precioXUnidad):
+
+
+from srcModelo.ClaseProducto import Producto
+
+producto = Producto(1, "Jamon y Queso", 0, 0, 0, 0)
+dicEmpanadas = {'jq' : producto}
+
+producto = Producto(2, "EQ", 0, 0, 0, 0)        #????????
+dicEmpanadas['eq'] = producto
+
+producto = Producto(3, "Carne Suave", 0, 0, 0, 0)
+dicEmpanadas['cs'] = producto
+
+producto = Producto(4, "Carne a Cuchillo", 0, 0, 0, 0)
+dicEmpanadas['cc'] = producto
+
+producto = Producto(5, "Carne Picante", 0, 0, 0, 0)
+dicEmpanadas['cp'] = producto
+
+producto = Producto(6, "Humita", 0, 0, 0, 0)
+dicEmpanadas['h'] = producto
+
+producto = Producto(7, "Pollo", 0, 0, 0, 0)
+dicEmpanadas['p'] = producto
+
+producto = Producto(8, "CAD", 0, 0, 0, 0)
+dicEmpanadas['cad'] = producto

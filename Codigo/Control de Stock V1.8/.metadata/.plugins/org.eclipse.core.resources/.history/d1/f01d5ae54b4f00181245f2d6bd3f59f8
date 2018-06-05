@@ -1,0 +1,38 @@
+import subprocess as sp
+import sys
+
+
+def limpia():
+    plataforma = sys.platform
+    if plataforma.startswith('linux'):
+        sp.call('clear')
+    elif plataforma.startswith('win'):
+        sp.call('cls', shell=True)
+        
+        
+def leerEntero(mensaje):
+
+    while(True):
+        dato = input(mensaje)
+        try:
+            dato = int(dato)
+            break
+        except ValueError:
+                print("")
+        pass
+    
+    return dato
+
+
+def buscarElemento(mensaje):
+
+    while(True):
+        opcion = input("\nSeleccione un elemento: \n")
+        try:
+            dicStock[opcion].mostrarProducto()
+            break
+        except ValueError:
+            print("El producto no existe en la lista")
+        pass
+    
+    return dato

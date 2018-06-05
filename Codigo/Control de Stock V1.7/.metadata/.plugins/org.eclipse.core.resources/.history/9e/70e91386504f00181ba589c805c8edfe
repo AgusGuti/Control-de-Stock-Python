@@ -1,0 +1,11 @@
+
+
+from ClaseProducto import *
+from diccionarios.dicDatos import *
+from manejoDeArchivos import *
+import os
+import time
+import os
+
+
+crearArchivo(dicStock)

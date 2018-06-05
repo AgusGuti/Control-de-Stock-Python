@@ -1,0 +1,35 @@
+# Programa de control de Stock para el negocio de EL NOBLE
+# Desarrollado por Federico Lopez y Agustin Gutierrez
+
+def mostrarMenuPrincipal():
+    
+    print ("Menu principal:")
+    print ("1- Agregar stock")
+    print ("2- Quitar stock")
+    print ("3- Modificar stock critico")
+    print ("4- Modificar cantidad por caja")
+    print ("5- Modificar precio por unidad")
+    print ("6- Mostrar un producto")
+    print ("7- Mostrar todos los productos")
+    print ()
+    print ("9- Generar registro diario")
+    print ()
+    print ("0- Salir")
+    print ()
+    
+    
+def mostrarMenuPromo():
+    
+    print ("Seleccione un item:")
+    print ("1- Cafe clasico chico")
+    print ("2- Cafe especial chico")
+    print ("3- 5 chipas + cafe clasico")
+    print ("4- 5 chipas + cafe especial")
+    print ("5- Cafe clasico + 2 medialunas")
+    print ("6- Cafe clasico + 1 medialuna")
+    print ("5- Cafe especial + 2 medialunas")
+    print ("6- Cafe especial+ 1 medialuna")
+    
+
+    print ("0- Volver al menu anterior")
+    print()

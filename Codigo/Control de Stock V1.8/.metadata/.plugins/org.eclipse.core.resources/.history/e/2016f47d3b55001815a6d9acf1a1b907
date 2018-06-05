@@ -1,0 +1,59 @@
+from ClaseProducto import *
+from dicDatos import *
+from manejoDeArchivos import *
+from funciones import *
+from operator import invert
+from _overlapped import NULL
+
+salir =False
+
+contador1=0
+contador2=0
+contador3=0
+contador4=0
+contador5=0
+contador6=0
+
+
+while(salir == False):
+	limpia()
+	
+	mostrarMenuPromo()
+
+	opcion=int(input("Ingrese el item de cafe: "))
+	limpia()
+
+
+	if (opcion==1) :
+		cantidad=leerEntero("Ingrese la cantidad de promociones: ")
+		contador1=contador1+cantidad
+
+	pass
+	
+	if (opcion==2) :
+		cantidad=LeerEntero("Ingrese la cantidad de promociones: ")
+		contador2=contador2+cantidad
+
+	pass
+
+	if (opcion==3) :
+		cantidad=LeerEntero("Ingrese la cantidad de promociones: ")
+		contador3=contador3+cantidad
+	pass
+
+	if (opcion==4) :
+		cantidad=LeerEntero("Ingrese la cantidad de promociones: ")
+		contador4=contador4+cantidad
+	pass
+
+	if (opcion==5) :
+		cantidad=LeerEntero("Ingrese la cantidad de promociones: ")
+		contador5=contador5+cantidad
+	pass
+
+	if (opcion==6) :
+		cantidad=LeerEntero("Ingrese la cantidad de promociones: ")
+		contador6=contador6+cantidad
+	pass
+
+pass

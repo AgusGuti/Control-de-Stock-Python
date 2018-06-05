@@ -1,0 +1,13 @@
+'''
+Created on 11 may. 2018
+
+@author: Ruso-Note
+'''
+
+class Promo(object):
+    
+    def __init__(self, idPromo, nombre, precio, cntVentas):
+        self.idPromo = idPromo
+        self.nombre = nombre
+        self.precio = precio
+        self.cntVentas = cntVentas
